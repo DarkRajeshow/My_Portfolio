@@ -9,20 +9,20 @@ export default function AboutHero() {
         <>
             <div className="about m-h-full w-full">
                 <div className="heading py-12">
-                    <AnimateText text={`Crafting the Future with code and Creativity!`} className="shadow-purple text-8xl font-bold text-center" durationtime="1" />
+                    <AnimateText text="Crafting the Future with code and Creativity!" className="shadow-purple text-8xl font-bold text-center" durationtime="1" />
                 </div>
                 <div className="sections grid grid-cols-11 py-16 gap-20">
                     <div className="col-span-5 font-medium text-lg">
                         <h3 className="text-2xl uppercase text-yellow-500 font-bold">My Experties</h3>
-                        <p className="mb-5 ">Hello! I'm Rajesh Adeli, a passionate full-stack developer specializing in front-end development with <strong className="dark:text-primaryDark">expertise</strong> in <strong className="dark:text-primaryDark">React, JavaScript, Tailwind CSS, Framer Motion, and Next.js</strong>. </p>
+                        <p className="mb-5 ">Hello! I am Rajesh Adeli, a passionate full-stack developer specializing in front-end development with <strong className="dark:text-primaryDark">expertise</strong> in <strong className="dark:text-primaryDark">React, JavaScript, Tailwind CSS, Framer Motion, and Next.js</strong>. </p>
 
-                        <p className="mb-5">With over <strong className="dark:text-primaryDark">a year of dedicated learning experience</strong>, I'm constantly moving forward to showcase my skills to the world by landing my first job.</p>
+                        <p className="mb-5">With over <strong className="dark:text-primaryDark">a year of dedicated learning experience</strong>, I am constantly moving forward to showcase my skills to the world by landing my first job.</p>
 
-                        <p className="mb-5">Creating <strong className="dark:text-primaryDark">user-friendly UI designs</strong> with captivating animations and visuals is my forte. Currently <strong className="dark:text-primaryDark">pursuing a computer science degree</strong> in India, I'm in my 3rd year of BTech.</p>
+                        <p className="mb-5">Creating <strong className="dark:text-primaryDark">user-friendly UI designs</strong> with captivating animations and visuals is my forte. Currently <strong className="dark:text-primaryDark">pursuing a computer science degree</strong> in India, I am in my 3rd year of BTech.</p>
 
-                        <p className="mb-5"> I believe in the power of continuous growth and strive to make a positive impact through my work.</p>
+                        <p className="mb-5">I believe in the <strong>power of continuous growth</strong> and strive to make a positive impact through my work.</p>
 
-                        <p> <strong className="dark:text-primaryDark">Thanks for reading</strong> – that's me in a nutshell!</p>
+                        <p> <strong className="dark:text-primaryDark">Thanks for reading</strong> – that&apos;s me in a nutshell!</p>
                     </div>
 
                     <div className="col-span-4 relative bg-light border-2 p-5 border-dark dark:border-light rounded-[20px] dark:bg-dark ">

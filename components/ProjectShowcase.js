@@ -40,7 +40,7 @@ const GridElementFeatured = ({ image, gitHub, title, description, websiteLink, f
                     viewport={{ once: true }}
 
                 >
-                    <Image src={image} onClick={handleNavigateProject} className='cursor-pointer hover:scale-[1.02] transition-all h-full w-full ' />
+                    <Image src={image} onClick={handleNavigateProject} className='cursor-pointer hover:scale-[1.02] transition-all h-full w-full ' alt='Project_Tumbnail'/>
                 </motion.div>
 
 
