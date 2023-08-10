@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shadow-purple {
+    text-shadow: 0 4px 0 #c3a5f5;
+}
+
+.shadow-dark {
+    text-shadow: 0 4px 0 #de811f;
+}
+
+
+.shadow-red {
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+    --tw-drop-shadow: drop-shadow(0 8px 0 #ffa9af);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 350ms;
+}
+
+.shadow-red:hover {
+    --tw-drop-shadow: drop-shadow(0 0px 0 #ffa9af);
+}
