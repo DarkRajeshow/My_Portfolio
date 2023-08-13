@@ -40,7 +40,7 @@ export default function Footer() {
                 </div>
                 <div className="contacttext flex flex-col font-medium text-xs min-[400px]:text-sm sm:text-base justify-center">
                     <h1 className='hidden sm:block'>✨ Want to connect? here is my contact details.</h1>
-                    <p >Email: <a href={"mailto:rajannaadeli@gmail.com"} className='font-bold'>rajannaadeli@gmail.com</a></p>
+                    <p >Email: <a href={"mailto:itsrajeshadeli@gmail.com"} className='font-bold'>rajannaadeli@gmail.com</a></p>
                     <p>Phone: <span className='font-bold'>+91 9359379618</span></p>
                 </div>
             </div>
