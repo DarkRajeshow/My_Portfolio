@@ -1,7 +1,11 @@
 "use client"
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
+import useThemeSwitcher from './hooks/useThemeSwitcher'
+
 export default function AnimateText({ text, className = "", durationtime = "0.5", isWord = false }) {
+
+    const [mode, setMode] = useThemeSwitcher();
 
     const quatVarient = {
         initial: {
@@ -11,7 +15,7 @@ export default function AnimateText({ text, className = "", durationtime = "0.5"
             opacity: 1,
             transition: {
                 delay: 0.5,
-                staggerChildren: 0.08
+                staggerChildren: 0.1
             }
         }
     }
@@ -30,13 +34,14 @@ export default function AnimateText({ text, className = "", durationtime = "0.5"
         }
     }
 
+
     return (
         <motion.div className='inline-block w-full overflow-hidden'
             variants={quatVarient}
             initial="initial"
             whileInView="whileInView"
         >
-            <h1 className={`capitalize ${className}`}>
+            <h1 className={`capitalize ${mode === "dark" ? "shadow-purple" : "shadow-noneS"} text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl ${className}  `}>
                 {
                     text.split(" ").map((word, index) => {
                         return <motion.span
@@ -47,6 +52,6 @@ export default function AnimateText({ text, className = "", durationtime = "0.5"
                     })
                 }
             </h1>
-        </motion.div>
+        </motion.div >
     )
 }

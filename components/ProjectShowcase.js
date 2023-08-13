@@ -22,9 +22,9 @@ const GridElementFeatured = ({ image, gitHub, title, description, websiteLink, f
 
     return (
         <>
-            <div className={`${featured ? "items-center col-span-2 flex py-8 px-10" : "px-6 py-6"} border-dark border-2 rounded-[20px] justify-center items-center gap-4 relative bg-light dark:bg-dark dark:text-light dark:border-light`}>
-                <div className={`${featured ? "w-[101%]" : "w-[103%]"} col-span-4 p-5 g-dark top-0 left-0 absolute -z-10 h-[103%] border-2 dark:bg-light bg-dark border-dark rounded-[35px] rounded-br-[25px] `} />
-                <motion.div className={`items-center img overflow-hidden rounded-[5px] ${featured ? "" : "mb-5 h-[300px]"} border-dark border-[1px] dark:border-light`}
+            <div className={`${featured ? "items-center col-span-2 flex flex-col xl:flex-row p-3 md:py-8 md:px-10" : "col-span-2 lg:col-span-1 p-3 md:px-6 md:py-6"} border-dark border-2 rounded-[20px] justify-center items-center gap-4 relative bg-light dark:bg-dark dark:text-light dark:border-light`}>
+                <div className={`${featured ? "w-[101%]" : "w-[101%] lg:w-[103%]"} col-span-4 p-5 g-dark top-0 left-0 absolute -z-10 h-[103%] border-2 dark:bg-light bg-dark border-dark rounded-[35px] rounded-br-[25px] `} />
+                <motion.div className={`items-center img overflow-hidden rounded-[5px] ${featured ? "" : "mb-5 h-auto lg:h-[300px]"} border-dark border-[1px] dark:border-light`}
                     initial={{
                         y: 40,
                         opacity: 0
@@ -40,7 +40,7 @@ const GridElementFeatured = ({ image, gitHub, title, description, websiteLink, f
                     viewport={{ once: true }}
 
                 >
-                    <Image src={image} onClick={handleNavigateProject} className='cursor-pointer hover:scale-[1.02] transition-all h-full w-full ' alt='Project_Tumbnail'/>
+                    <Image src={image} onClick={handleNavigateProject} className='cursor-pointer hover:scale-[1.02] transition-all h-full w-full' alt='Project_Tumbnail'/>
                 </motion.div>
 
 
@@ -60,8 +60,8 @@ const GridElementFeatured = ({ image, gitHub, title, description, websiteLink, f
                     viewport={{ once: true }}
 
                 >
-                    <h3 className='text-primary font-bold text-xl'> {featured ? "Featured Project" : `Progress ${projectNo}`}</h3>
-                    <h2 className='text-5xl font-bold'
+                    <h3 className='text-primary font-bold text-base sm:text-lg md:text-xl'> {featured ? "Featured Project" : `Progress ${projectNo}`}</h3>
+                    <h2 className='text-2xl sm:text-3xl md:text-5xl font-bold'
                         initial={{
                             y: 40,
                             opacity: 0
@@ -79,10 +79,10 @@ const GridElementFeatured = ({ image, gitHub, title, description, websiteLink, f
                     <div className="content"
 
                     >
-                        <p className='font-semibold text-lg py-5'>{description}</p>
+                        <p className='font-semibold text-sm sm:text-base md:text-lg py-2 md:py-5'>{description}</p>
                         <div className="links flex pb-5 items-center">
-                            <a href={gitHub} target='_blank'><GithubIcon className={'w-[40px] text-light bg-dark border-2 hover:bg-light dark:bg-light dark:text-dark hover:text-dark border-dark dark:hover:bg-dark dark:hover:text-light dark:border-light rounded-full'} /></a>
-                            <a href={websiteLink} target='_blank'><button className='text-light text-xl bg-dark font-bold px-4 py-3 mx-4 rounded-lg hover:scale-[1.02] transition-all border-2 hover:bg-light dark:bg-light dark:text-dark hover:text-dark border-dark dark:hover:bg-dark dark:hover:text-light dark:border-light'>Explore</button></a>
+                            <a href={gitHub} target='_blank'><GithubIcon className={'!w-[30px] md:!w-[40px] text-light bg-dark border-2 hover:bg-light dark:bg-light dark:text-dark hover:text-dark border-dark dark:hover:bg-dark dark:hover:text-light dark:border-light rounded-full'} /></a>
+                            <a href={websiteLink} target='_blank'><button className='text-[12px] sm:text-sm md:text-xl text-light bg-dark font-bold py-1 px-2 md:px-4 md:py-3 mx-4 rounded-lg hover:scale-[1.02] transition-all border-2 hover:bg-light dark:bg-light dark:text-dark hover:text-dark border-dark dark:hover:bg-dark dark:hover:text-light dark:border-light'>Explore</button></a>
                         </div>
                     </div>
                 </motion.div>
@@ -93,7 +93,7 @@ const GridElementFeatured = ({ image, gitHub, title, description, websiteLink, f
 export default function ProjectShowcase() {
     return (
         <>
-            <AnimateText className='text-8xl my-32 font-extrabold text-center shadow-purple' text="Want to see My work? Here it is." durationtime='1' />
+            <AnimateText className='my-16 md:my-24 lg:my-32 font-extrabold text-center shadow-purple' text="Want to see My work? Here it is." durationtime='1' />
 
             <div className="grid grid-cols-2 gap-20 pb-64">
 

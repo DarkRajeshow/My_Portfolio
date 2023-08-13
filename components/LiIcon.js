@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion, useScroll } from 'framer-motion'
 
-export default function LiIcon({ refDe, className }) {
+export default function LiIcon({ refDe, className = ""}) {
     const { scrollYProgress } = useScroll({
         target: refDe,
         offset: ["center end", "center center"],

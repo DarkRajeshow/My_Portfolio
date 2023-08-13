@@ -7,22 +7,6 @@ import { motion } from 'framer-motion'
 import { LinkArrow } from '@/components/Icon'
 
 export default function Hero() {
-    const imageVarients = {
-        initial: {
-            x: "-15%",
-            opacity: 0
-        },
-        animate: {
-            x: 0,
-            opacity: 1,
-            transition: {
-                delay: 0.5,
-                duration: 1,
-
-            }
-        }
-
-    }
     const paraVariants = {
         initial: {
             opacity: 0,
@@ -39,31 +23,20 @@ export default function Hero() {
     }
     return (
         <>
-            <div className="grid lg:grid-cols-2 xl:py-0 py-20 ">
-                <motion.div
-                    variants={imageVarients}
-                    initial="initial"
-                    whileInView="animate"
-                    className='p-10'
+            <div className="bg-texturedBg dark:bg-texturedBgDark flex justify-center items-center h-[80vh] w-full rounded-br-[250px]">
+                <div className="flex flex-col h-auto justify-center w-[80%] text-center"
                 >
-                    <Image src={profile} alt='profile' className='rounded-[10px]' />
-                </motion.div>
+                    <AnimateText text={'Combining technology with artistry.'} className=' font-bold mb-5 xl:!text-6xl lg:!text-5xl  md:!text-5xl sm:!text-4xl !text-3xl dark:shadow-purple' durationtime='1' />
 
-                <div className="text-greeen-500 flex flex-col h-full justify-center"
-                >
-                    <AnimateText text={'Turning Vision Into Reality With Code And Design!'} className=' font-bold mb-5 text-3xl lg:text-5xl xl:text-6xl md:text-5xl sm:text-4xl shadow-purple ' durationtime='1' />
-
-                    <motion.p className='text-sm md:text-base lg:text-lg font-medium '
+                    <motion.p className='text-[12px] min-[460px]:text-sm md:text-base lg:text-lg font-medium '
                         variants={paraVariants}
                         initial="initial"
                         whileInView="animate"
                     >
-                        I am <strong className='underline dark:text-primaryDark'>Rajesh Adeli</strong> a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.🎨 Explore my latest projects, showcasing my expertise in React.js and web development.✨
+                        I am <strong className='underline dark:text-primaryDark'>Rajesh Adeli</strong>, a front-end focused full-stack developer, I am dedicated to turning ideas into innovative web applications.🎨 Explore my latest projects, showcasing my expertise in React.js and web development.✨
                     </motion.p>
 
-                    <div className="buttons text-left py-4 flex flex-row"
-
-                    >
+                    <div className="buttons py-4 flex flex-row items-center m-auto w-auto">
                         <motion.a href={'/dummy.pdf'} target='_blank'
                             variants={paraVariants}
                             initial="initial"
@@ -87,3 +60,6 @@ export default function Hero() {
         </>
     )
 }
+
+
+// pt-6 sm:pt-12 md:pt-16 lg:pt-20 xl:py-20 

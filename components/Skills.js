@@ -6,7 +6,7 @@ import ScrollAnimation from "./ScrollAnimation"
 
 const Skill = ({ name, xA, yA, web }) => {
   return (
-    <motion.div className={`absolute web flex justify-center ${web ? "p-8" : "px-4 py-3"} items-center text-base font-semibold text-light bg-dark dark:text-dark dark:bg-light rounded-full boxShadow-3xl`}
+    <motion.div className={`absolute web flex justify-center ${web ? "p-8" : " p-2 sm:p-2 md:px-3 md:py-2 lg:px-4 lg:py-3"} items-center font-semibold sm:text-light sm:bg-dark sm:dark:text-dark sm:dark:bg-light text-dark bg-transparent dark:text-light dark:bg-transparent rounded-full boxShadow-3xl text-[10px] sm:text-[12px] md:text-sm lg:text-base`}
       whileHover={{
         scale: [1, 1.1],
       }}
@@ -15,8 +15,8 @@ const Skill = ({ name, xA, yA, web }) => {
         y: 0
       }}
       whileInView={{
-        x: `${xA}px`,
-        y: `${yA}px`,
+        x: `${xA}`,
+        y: `${yA}`,
         transition: {
           type: "just",
           duration: 1
@@ -33,21 +33,22 @@ export default function Skills({ web = false }) {
 
   return (
     <div>
-      <AnimateText isWord={true} className="text-8xl font-bold shadow-purple text-center py-10" text={"S k i l l s"}></AnimateText>
-      <div className="h-screen w-full flex m-auto bg-circularLight dark:bg-circularDark rounded-full justify-center relative items-center ">
-        <Skill name="Web" xA="0" yA="0" web={true} />
-        <Skill name="JavaScript" xA="-250" yA="80" />
-        <Skill name="CSS" xA="300" yA="0" />
-        <Skill name="HTML" xA="80" yA="-170" />
-        <Skill name="Tailwind CSS" xA="70" yA="165" />
-        <Skill name="ReactJS" xA="-330" yA="300" />
-        <Skill name="GitHub" xA="-480" yA="40" />
-        <Skill name="Web Design" xA="350" yA="280" />
-        <Skill name="Responsive Design" xA="280" yA="-250" />
-        <Skill name="BootsStrap" xA="480" yA="0" />
-        <Skill name="NodeJS" xA="-30" yA="-350" />
-        <Skill name="MongoDB" xA="-300" yA="-250" />
-        <Skill name="NextJS" xA="-200" yA="-120" />
+      <AnimateText isWord={true} className="mb-20 font-bold shadow-purple text-center py-10" text={"S k i l l s"}></AnimateText>
+      <div className="h-[50vw] sm:h-[60vw] md:h-[80vw] lg:h-screen flex m-auto bg-circularXs sm:bg-circularSm md:bg-circularMd lg:bg-circularLg xl:bg-circularLight dark:bg-circularDarkXs dark:sm:bg-circularDarkSm dark:md:bg-circularDarkMd dark:lg:bg-circularDarkLg dark:xl:bg-circularDark rounded-full justify-center relative items-center ">
+        <Skill name="Web" xA="0vw" yA="0vw" web={true} />
+        <Skill name="JavaScript" xA="-20vw" yA="0vw" />
+        <Skill name="CSS" xA="-5vw" yA="-11vw" />
+        <Skill name="HTML" xA="16vw" yA="-6vw" />
+        <Skill name="Tailwind CSS" xA="-6vw" yA="11vw" />
+        <Skill name="ReactJS" xA="-28vw" yA="-15vw" />
+        <Skill name="GitHub" xA="-38vw" yA="0vw" />
+        <Skill name="Web Design" xA="25vw" yA="-17vw" />
+        <Skill name="Responsive Design" xA="35vw" yA="-3vw" />
+        <Skill name="BootsStrap" xA="0vw" yA="-23vw" />
+        <Skill name="NodeJS" xA="-26vw" yA="16vw" />
+        <Skill name="MongoDB" xA="5vw" yA="22vw" />
+        <Skill name="NextJS" xA="30vw" yA="14vw" />
+        <Skill name="FramerMotion" xA="16vw" yA="8vw" />
       </div>
       <ScrollAnimation />
     </div>

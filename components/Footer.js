@@ -33,22 +33,22 @@ export default function Footer() {
     }
 
     return (
-        <div className="flex justify-between py-16 border-t-2 border-dark  text-dark bg-light dark:bg-dark dark:text-light dark:border-light -mx-32 px-32">
+        <div className="flex justify-between py-16 border-t-2 border-light text-light bg-dark dark:bg-light dark:text-dark dark:border-dark -mx-32 px-32">
             <div className="logowithtext flex">
                 <div className="logo mr-5 flex items-center">
-                    <Logo classname="!h-28 !w-28 !text-4xl" />
+                    <Logo classname="sm:!h-28 sm:!w-28 sm:!text-4xl" />
                 </div>
-                <div className="contacttext flex flex-col font-medium text-base justify-center">
-                    <h1>✨ Want to connect? here is my contact details.</h1>
-                    <p>Email: <Link href={"mailto:rajannaadeli@gmail.com"} className='font-bold'>rajannaadeli@gmail.com</Link></p>
+                <div className="contacttext flex flex-col font-medium text-xs min-[400px]:text-sm sm:text-base justify-center">
+                    <h1 className='hidden sm:block'>✨ Want to connect? here is my contact details.</h1>
+                    <p >Email: <a href={"mailto:rajannaadeli@gmail.com"} className='font-bold'>rajannaadeli@gmail.com</a></p>
                     <p>Phone: <span className='font-bold'>+91 9359379618</span></p>
                 </div>
             </div>
-            <div className="logowithtext flex w-[250px] justify-between items-center">
+            <div className="logowithtext w-[250px] justify-between items-center hidden md:flex">
                 <div className="flex flex-col mr-5 ">
-                    <Customlink href={"/"} title="Home" hreflink={'/'} classname={'mx-4 mb-2'} />
-                    <Customlink href={"/about"} title="About" hreflink={'/about'} classname={'mx-4 mb-2'} />
-                    <Customlink href={"/projects"} title="Projects" hreflink={'/projects'} classname={'mx-4 mb-2'} />
+                    <Customlink href={"/"} title="Home" hreflink={'/'} classname={'mx-4 mb-2'} isFooterLink={true} />
+                    <Customlink href={"/about"} title="About" hreflink={'/about'} classname={'mx-4 mb-2'} isFooterLink={true} />
+                    <Customlink href={"/projects"} title="Projects" hreflink={'/projects'} classname={'mx-4 mb-2'} isFooterLink={true}/>
                 </div>
                 <div className="flex justify- flex-col font-medium text-md items-center">
                     <MotionLink href={"https://github.com/DarkRajeshow/"} target='_blank' className=' text-[26px] mb-3' variants={iconMotionVariants} animate="animate" whileHover="hover"><GithubIcon /></MotionLink>
