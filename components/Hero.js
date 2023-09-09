@@ -1,7 +1,5 @@
 "use client"
-import Image from 'next/image'
 import React from 'react'
-import profile from '@/public/images/profile/hero.png'
 import AnimateText from './AnimateText'
 import { motion } from 'framer-motion'
 import { LinkArrow } from '@/components/Icon'
@@ -37,12 +35,12 @@ export default function Hero() {
                     </motion.p>
 
                     <div className="buttons py-4 flex flex-row items-center m-auto w-auto">
-                        <motion.a href={'/dummy.pdf'} target='_blank'
+                        <motion.a href={'https://drive.google.com/file/d/1mKx3yxqkOS25_sCbMHFzXtgULty8yjiq/view'} target='_blank'
                             variants={paraVariants}
                             initial="initial"
                             whileInView="animate"
                         >
-                            <button className="text-light bg-dark mr-3 rounded-lg p-2 md:p-3 text-md md:text-xl font-bold flex border-2 hover:bg-light dark:bg-light dark:text-dark hover:text-dark border-dark dark:hover:bg-dark dark:hover:text-light dark:border-light">Resume <span><LinkArrow className={"px-2 h-6 inline-block "} /></span></button>
+                            <button className="text-light bg-dark mr-3 rounded-lg p-2 md:p-3 text-md md:text-xl font-bold flex border-2 hover:bg-light dark:bg-light dark:text-dark hover:text-dark border-dark dark:hover:bg-dark dark:hover:text-light dark:border-light">My CV <span><LinkArrow className={"px-2 h-6 inline-block "} /></span></button>
                         </motion.a>
 
                         <motion.a href="mailto:rajannaadeli@gmail.com"
@@ -50,7 +48,7 @@ export default function Hero() {
                             initial="initial"
                             whileInView="animate"
                         >
-                            <button className="text-dark bg-light rounded-lg p-2 md:p-3 text-md md:text-xl font-bold border-2 hover:bg-dark dark:bg-dark dark:text-light hover:text-light border-dark dark:hover:bg-light dark:hover:text-dark dark:border-light">Contact</button>
+                            <button className="text-dark bg-light rounded-lg p-2 md:p-3 text-md md:text-xl font-bold border-2 hover:bg-dark dark:bg-dark dark:text-light hover:text-light border-dark dark:hover:bg-light dark:hover:text-dark dark:border-light">Email</button>
                         </motion.a>
                     </div>
 

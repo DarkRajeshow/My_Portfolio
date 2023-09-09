@@ -16,7 +16,7 @@ export default function AboutHero() {
                     {/* description */}
                     <div className="col-span-9 min-[400px]:col-span-full md:col-span-6 xl:col-span-5 font-medium text-sm md:text-lg xl:text-xl w-full order-2 md:order-1 mb-4 sm:mb-6 md:mb-8 lg:mb-10">
                         <h3 className="text-xl lg:text-2xl uppercase text-yellow-500 font-bold ">My Experties</h3>
-                        <p className="mb-5">Hello! I am Rajesh Adeli, a passionate full-stack developer specializing in front-end development with <strong className="dark:text-primaryDark">expertise</strong> in <strong className="dark:text-primaryDark">React, JavaScript, Tailwind CSS, Framer Motion, and Next.js</strong>. </p>
+                        <p className="mb-5">Hello! I am Rajesh Adeli formally known as Rajanna Adeli, a passionate full-stack developer specializing in front-end development with <strong className="dark:text-primaryDark">expertise</strong> in <strong className="dark:text-primaryDark">React, JavaScript, Tailwind CSS, Framer Motion, and Next.js</strong>. </p>
 
                         <p className="mb-5">With over <strong className="dark:text-primaryDark">a year of dedicated learning experience</strong>, I am constantly moving forward to showcase my skills to the world by landing my first job.</p>
 
