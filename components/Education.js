@@ -56,10 +56,11 @@ export default function Experience() {
                     <motion.div ref={animationRef} className={`absolute top-0 left-9 origin-top bg-dark dark:bg-primaryDark rounded-lg w-[4px] h-full`} style={{ scaleY: scrollYProgress }}></motion.div>
 
                     <ul className='w-full flex flex-col items-start justify-between ml-4 py-10' >
+
                         <EducationElement
-                            course={"Diploma In Civil Engineering"}
-                            duration={"2019-2022"} collage={"Government Polytechnic, Solapur"}
-                            learnings={"A passionate programmer with a civil engineering background, I embarked on a journey studying civil engineering during my diploma. However, it was during my 3rd year that programming captivated me, leading me to discover my true passion for web development."}
+                            course={"Online Learning"}
+                            duration={"2022-Present"} collage={"YouTube, Udemy etc"}
+                            learnings={"After completing my diploma, I embarked on a journey to learn web development. The online world offers an ocean of affordable opportunities to explore and seize."}
                         />
 
                         <EducationElement
@@ -69,14 +70,15 @@ export default function Experience() {
                         />
 
                         <EducationElement
-                            course={"Online Learning"}
-                            duration={"2022-Present"} collage={"YouTube, Udemy etc"}
-                            learnings={"After completing my diploma, I embarked on a journey to learn web development. The online world offers an ocean of affordable opportunities to explore and seize."}
+                            course={"Diploma In Civil Engineering"}
+                            duration={"2019-2022"} collage={"Government Polytechnic, Solapur"}
+                            learnings={"A passionate programmer with a civil engineering background, I embarked on a journey studying civil engineering during my diploma. However, it was during my 3rd year that programming captivated me, leading me to discover my true passion for web development."}
                         />
+
                     </ul>
                 </div>
 
-                <ScrollAnimation/>
+                <ScrollAnimation />
             </div>
         </>
     )
