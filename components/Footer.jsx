@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Logo from './Logo'
-import { GithubIcon, LinkedInIcon, SunIcon, MoonIcon } from '../components/Icon'
+import { GithubIcon, LinkedInIcon, SunIcon, MoonIcon } from './Icon'
 import Customlink from './Customlink'
 import { motion } from 'framer-motion'
 import useThemeSwitcher from './hooks/useThemeSwitcher'

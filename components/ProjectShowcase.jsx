@@ -101,11 +101,11 @@ const GridElementFeatured = ({ image, gitHub, title, description, websiteLink, f
 export default function ProjectShowcase() {
     return (
         <>
-            <AnimateText className='my-16 md:my-24 lg:my-32 font-extrabold text-center shadow-purple' text="Want to see My work? Here it is." durationtime='1' />
+            <AnimateText className='my-16 md:my-24 lg:my-32 font-extrabold text-center shadow-purple'text="Want to see My work? Here it is." durationtime='1' />
 
             <div className="grid grid-cols-2 gap-20 pb-64">
 
-                <GridElementFeatured image={Anime} websiteLink={"https://otakuuniverse.vercel.app/"} gitHub="https://github.com/DarkRajeshow/Otaku_in_nextJS" technologyUsed={["NextJS", "TailwindCSS"]} title="Otaku Universe: An Anime Discovery" description={"Discover your favorite anime on Otaku! Find recommendations based on genre, year, and age rating. Get detailed info and personalized suggestions. Try it now!"} featured={true} />
+                <GridElementFeatured image={Anime} websiteLink={"https://epicuniverse.vercel.app/"} gitHub="https://github.com/DarkRajeshow/Otaku_in_nextJS" technologyUsed={["NextJS", "TailwindCSS"]} title="Show time : A Movie Discovery Platform" description={"Discover your favorite movies on my website! Find recommendations based on genre, year, and age rating. Get detailed info and personalized suggestions. Try it now!"} featured={true} />
 
                 <GridElementFeatured image={cllimateClues} websiteLink={"https://darkrajeshow.github.io/ClimateClues/"} gitHub="https://github.com/DarkRajeshow/ClimateClues" title="ClimateClues" technologyUsed={["ReactJS", "TailwindCSS"]} description={"Get future forecasts, rain chances, current temperature, and humidity for any city. Stay informed and plan confidently with our powerful weather analysis tools."} featured={true} />
 

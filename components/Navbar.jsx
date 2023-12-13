@@ -1,9 +1,9 @@
 "use client"
 import Link from 'next/link'
 import React, { useState } from 'react'
-import Logo from '../components/Logo'
-import Customlink from '../components/Customlink'
-import { GithubIcon, LinkedInIcon, SunIcon, MoonIcon } from '../components/Icon'
+import Logo from './Logo'
+import Customlink from './Customlink'
+import { GithubIcon, LinkedInIcon, SunIcon, MoonIcon } from './Icon'
 import { motion } from 'framer-motion'
 import useThemeSwitcher from './hooks/useThemeSwitcher'
 import CustomLinkMobile from './CustomLinkMobile'
