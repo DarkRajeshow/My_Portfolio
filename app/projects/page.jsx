@@ -1,4 +1,4 @@
-import ProjectShowcase from '@/components/ProjectShowcase'
+import ProjectShowcase from '@/components/shared/ProjectShowcase'
 import React from 'react'
 
 export default function Projects() {

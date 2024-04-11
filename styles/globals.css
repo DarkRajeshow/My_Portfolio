@@ -37,3 +37,17 @@ body {
 /* .texturedBg {
     background: linear-gradient(to right, rgba(245, 245, 245, .8), rgb(255 221 214 / 80%)), url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
 } */
+
+
+.textGradientDark {
+    background: linear-gradient(90deg, rgba(117,255,71,1) 0%, rgba(255,255,255,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.textGradient {
+    background: linear-gradient(90deg, rgb(59, 21, 4) 0%, rgba(255,255,255,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

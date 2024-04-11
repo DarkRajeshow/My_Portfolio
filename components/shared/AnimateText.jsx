@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
-import useThemeSwitcher from './hooks/useThemeSwitcher'
+import useThemeSwitcher from '../hooks/useThemeSwitcher'
 
 export default function AnimateText({ text, className = "", durationtime = "0.5", isWord = false }) {
 

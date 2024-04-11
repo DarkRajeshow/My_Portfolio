@@ -1,6 +1,6 @@
-import Hero from "@/components/Hero";
-import LinkToAbout from "@/components/LinkToAbout";
-import ScrollAnimation from "@/components/ScrollAnimation";
+import Hero from "@/components/shared/Hero";
+import LinkToAbout from "@/components/shared/LovedSkills";
+import ScrollAnimation from "@/components/shared/ScrollAnimation";
 
 export default function Home() {
   return (

@@ -6,7 +6,7 @@ import Logo from './Logo'
 import { GithubIcon, LinkedInIcon, SunIcon, MoonIcon } from './Icon'
 import Customlink from './Customlink'
 import { motion } from 'framer-motion'
-import useThemeSwitcher from './hooks/useThemeSwitcher'
+import useThemeSwitcher from '../hooks/useThemeSwitcher'
 
 
 export default function Footer() {
@@ -33,7 +33,7 @@ export default function Footer() {
     }
 
     return (
-        <div className="flex justify-between py-16 border-t-2 border-light text-light bg-dark dark:bg-light dark:text-dark dark:border-dark -mx-32 px-32">
+        <div className="flex justify-between py-16 border-t-2 border-light text-light bg-dark dark:bg-light/10  -mx-32 px-32">
             <div className="logowithtext flex">
                 <div className="logo mr-5 flex items-center">
                     <Logo classname="sm:!h-28 sm:!w-28 sm:!text-4xl" />

@@ -5,7 +5,7 @@ import Logo from './Logo'
 import Customlink from './Customlink'
 import { GithubIcon, LinkedInIcon, SunIcon, MoonIcon } from './Icon'
 import { motion } from 'framer-motion'
-import useThemeSwitcher from './hooks/useThemeSwitcher'
+import useThemeSwitcher from '../hooks/useThemeSwitcher'
 import CustomLinkMobile from './CustomLinkMobile'
 
 
@@ -41,11 +41,12 @@ export default function Navbar() {
         setisOpen(!isOpen);
     }
 
+
     return (
         <header
-            className='m-auto relative py-8 -mx-32 px-32  font-medium flex justify-between items-center border-t-dark dark:border-t-light border-light dark:border-dark border-4 dark:text-light dark:bg-dark bg-text text-dark'
+            className='m-auto relative py-8 -mx-32 px-32  font-medium flex justify-between items-center dark:text-light dark:bg-dark bg-text text-dark'
         >
-
+       
             <div className="lg:hidden">
                 {/* menu Icon */}
                 <div className="menu flex flex-col cursor-pointer" onClick={handleClick}>
@@ -54,14 +55,14 @@ export default function Navbar() {
                     <span className={`h-1 bg-dark transition-all duration-300 ease-in-out dark:bg-light w-5 rounded-sm mb-1 ${isOpen ? "-rotate-45 -trzanslate-y-2" : ""}`}></span>
                 </div>
 
-                
+
                 {/* popup hamburgar */}
-                {isOpen && <div className="flex flex-col min-w-[70vw] lg:hidden items-center justify-center fixed z-50  top-1/2 left-1/2 h-60 rounded-xl -translate-x-1/2 -translate-y-1/2 text-light dark:text-dark dark:bg-light/75 bg-dark/75 backdrop-blur-md py-32">
+                {isOpen && <div className="flex flex-col min-w-[70vw] lg:hidden items-center justify-center fixed z-50 top-1/2 left-1/2 h-60 rounded-xl -translate-x-1/2 -translate-y-1/2 text-light dark:text-dark dark:bg-light/75 bg-dark/75 backdrop-blur-md py-32">
                     <nav className='flex flex-col py-10'>
-                        
+
                         <CustomLinkMobile href={"/"} title="Home" hreflink={'/'} classname={'my-1'} toggleFunc={handleClick} />
-                        <CustomLinkMobile href={"/about"} title="About" hreflink={'/about'} classname={'my-1' } toggleFunc={handleClick}/>
-                        <CustomLinkMobile href={"/projects"} title="Projects" hreflink={'/projects'} classname={'my-1'} toggleFunc={handleClick}/>
+                        <CustomLinkMobile href={"/about"} title="About" hreflink={'/about'} classname={'my-1'} toggleFunc={handleClick} />
+                        <CustomLinkMobile href={"/projects"} title="Projects" hreflink={'/projects'} classname={'my-1'} toggleFunc={handleClick} />
                     </nav>
 
                     <nav className='flex justify-between items-center '>

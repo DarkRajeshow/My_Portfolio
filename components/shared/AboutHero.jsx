@@ -15,16 +15,16 @@ export default function AboutHero() {
 
                     {/* description */}
                     <div className="col-span-9 min-[400px]:col-span-full md:col-span-6 xl:col-span-5 font-medium text-sm md:text-lg xl:text-xl w-full order-2 md:order-1 mb-4 sm:mb-6 md:mb-8 lg:mb-10">
-                        <h3 className="text-xl lg:text-2xl uppercase text-yellow-500 font-bold ">My Experties</h3>
-                        <p className="mb-5">Hello! I am Rajesh Adeli formally known as Rajanna Adeli, a passionate full-stack developer specializing in front-end development with <strong className="dark:text-primaryDark">expertise</strong> in <strong className="dark:text-primaryDark">React, JavaScript, Tailwind CSS, Framer Motion, and Next.js</strong>. </p>
+                        <h3 className="text-2xl lg:text-3xl text-dark dark:text-light my-4 font-bold ">Who am I?</h3>
+                        <p className="mb-5">Hello! I am Rajesh Adeli formally known as Rajanna Adeli, a passionate full-stack developer specializing in front-end development with <span className="dark:text-primaryDark font-semibold">expertise</span> in <span className="dark:text-primaryDark font-semibold">React, JavaScript, Tailwind CSS, Framer Motion, and Next.js</span>. </p>
 
-                        <p className="mb-5">With over <strong className="dark:text-primaryDark">a year of dedicated learning experience</strong>, I am constantly moving forward to showcase my skills to the world by landing my first job.</p>
+                        <p className="mb-5">With over <span className="dark:text-primaryDark font-semibold">a year of dedicated learning experience</span> and <span className="dark:text-primaryDark font-semibold">another year of freelancing</span>, I am constantly moving forward to showcase my skills to the world by landing my first job.</p>
 
-                        <p className="mb-5">Creating <strong className="dark:text-primaryDark">user-friendly UI designs</strong> with captivating animations and visuals is my forte. Currently <strong className="dark:text-primaryDark">pursuing a computer science degree</strong> in India, I am in my 3rd year of BTech.</p>
+                        <p className="mb-5">Creating <span className="dark:text-primaryDark font-semibold">user-friendly UI designs</span> with captivating animations and visuals is my forte. Currently <span className="dark:text-primaryDark font-semibold">pursuing a computer science degree</span> in India, I am in my 3rd year of BTech.</p>
 
-                        <p className="mb-5">I believe in the <strong>power of continuous growth</strong> and strive to make a positive impact through my work.</p>
+                        <p className="mb-5">I believe in the <span className="dark:text-primaryDark font-semibold">power of continuous growth</span> and strive to make a positive impact through my work.</p>
 
-                        <p> <strong className="dark:text-primaryDark">Thanks for reading</strong> – that&apos;s me in a nutshell!</p>
+                        <p> <span className="dark:text-primaryDark font-semibold">Thanks for reading</span> – that&apos;s me in a nutshell!</p>
                     </div>
 
 
@@ -43,7 +43,7 @@ export default function AboutHero() {
                             <p className="text-[12px] sm:text-sm">projects completed</p>
                         </div>
                         <div className="experience text-center">
-                            <Counter className="coute text-4xl md:text-7xl font-bold flex flex-col  justify-center text-center" count={1}></Counter>
+                            <Counter className="coute text-4xl md:text-7xl font-bold flex flex-col  justify-center text-center" count={2}></Counter>
                             <p className="text-[12px] sm:text-sm">years of experience</p>
                         </div>
                     </div>

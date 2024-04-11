@@ -30,7 +30,6 @@ const Skill = ({ name, xA, yA, web }) => {
 }
 
 export default function Skills({ web = false }) {
-
   return (
     <div>
       <AnimateText isWord={true} className="mb-20 font-bold shadow-purple text-center py-10" text={"S k i l l s"}></AnimateText>
@@ -41,14 +40,14 @@ export default function Skills({ web = false }) {
         <Skill name="HTML" xA="16vw" yA="-6vw" />
         <Skill name="Tailwind CSS" xA="-6vw" yA="11vw" />
         <Skill name="ReactJS" xA="-28vw" yA="-15vw" />
-        <Skill name="GitHub" xA="-38vw" yA="0vw" />
-        <Skill name="Web Design" xA="25vw" yA="-17vw" />
-        <Skill name="Responsive Design" xA="35vw" yA="-3vw" />
-        <Skill name="BootsStrap" xA="0vw" yA="-23vw" />
+        <Skill name="Git & GitHub" xA="-38vw" yA="0vw" />
+        <Skill name="Typescript" xA="25vw" yA="-17vw" />
+        <Skill name="GSAP" xA="35vw" yA="-3vw" />
+        <Skill name="Express" xA="0vw" yA="-23vw" />
         <Skill name="NodeJS" xA="-26vw" yA="16vw" />
         <Skill name="MongoDB" xA="5vw" yA="22vw" />
         <Skill name="NextJS" xA="30vw" yA="14vw" />
-        <Skill name="FramerMotion" xA="16vw" yA="8vw" />
+        <Skill name="Framer Motion" xA="16vw" yA="8vw" />
       </div>
       <ScrollAnimation />
     </div>

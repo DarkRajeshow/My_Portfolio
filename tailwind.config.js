@@ -1,4 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
+
 module.exports = {
   darkMode: "class",
   content: [
@@ -31,13 +37,25 @@ module.exports = {
         circularSm: "repeating-radial-gradient(rgba(0, 0, 0, 0.4) 2px, 5px, #f5f5f5 5px, #f5f5f5 40px)",
         circularXs: "repeating-radial-gradient(rgba(0, 0, 0, 0.4) 2px, 5px, #f5f5f5 5px, #f5f5f5 30px)",
         texturedBg: "linear-gradient(to right, rgba(245, 245, 245, .8), rgb(255 221 214 / 80%)), url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);",
-        texturedBgDark: "linear-gradient(to right, #1b1b1b, rgb(0, 0, 0, 0.75)), url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);"
+        texturedBgDark: "linear-gradient(to right, #1b1b1b, rgb(0, 0, 0, 0.75)), url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);",
+        gradientBg: "background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);"
       },
       boxShadow: {
         "3xl": "0 15px 15px 1px rgba(80,230,217, 0.4)",
       },
 
     },
-    plugins: [],
+    plugins: [addVariablesForColors],
   }
+}
+
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
 }

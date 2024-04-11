@@ -2,7 +2,7 @@
 import React from 'react'
 import AnimateText from './AnimateText'
 import { motion } from 'framer-motion'
-import { LinkArrow } from '@/components/Icon'
+import { LinkArrow } from '@/components/shared/Icon'
 
 export default function Hero() {
     const paraVariants = {

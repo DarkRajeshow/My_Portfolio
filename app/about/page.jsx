@@ -1,8 +1,8 @@
-import AboutHero from '@/components/AboutHero'
-import Experience from '@/components/Experience'
-import Skills from '@/components/Skills'
+import AboutHero from '@/components/shared/AboutHero'
+import Experience from '@/components/shared/Experience'
+import Skills from '@/components/shared/Skills'
 import React from 'react'
-import Education from '@/components/Education'
+import Education from '@/components/shared/Education'
 
 export default function About() {
   return (

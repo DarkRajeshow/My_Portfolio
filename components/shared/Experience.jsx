@@ -93,7 +93,7 @@ export default function Experience() {
                         <ProjectExperience
                             title={"Projects"}
                             linkTitle={"Checkout"}
-                            description={"Although I lack actual corporate experience, I have completed several projects that can be considered as valuable experience. Take a look at some of my projects to see my experience level."}
+                            description={"Although I lack actual corporate experience, I have completed several freelancing and personal projects that can be considered as valuable experience. Take a look at some of my projects to see my experience level."}
                         />
                     </ul>
                 </div>
