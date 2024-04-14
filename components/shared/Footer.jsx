@@ -33,15 +33,15 @@ export default function Footer() {
     }
 
     return (
-        <div className="flex justify-between py-16 border-t-2 border-light text-light bg-dark dark:bg-light/10  -mx-32 px-32">
+        <div className="flex justify-between py-6 sm:py-10 md:py-16 border-t-2 border-light text-light bg-dark dark:bg-light/10  -mx-32 px-36 sm:px-32">
             <div className="logowithtext flex">
                 <div className="logo mr-5 flex items-center">
                     <Logo classname="sm:!h-28 sm:!w-28 sm:!text-4xl" />
                 </div>
                 <div className="contacttext flex flex-col font-medium text-xs min-[400px]:text-sm sm:text-base justify-center">
                     <h1 className='hidden sm:block'>✨ Want to connect? here is my contact details.</h1>
-                    <p >Email: <a href={"mailto:rajannaadeli@gmail.com"} className='font-bold'>rajannaadeli@gmail.com</a></p>
-                    <p>Phone: <span className='font-bold'>+91 9359379618</span></p>
+                    <p >Email: <a href={"mailto:rajannaadeli@gmail.com"} className='font-semibold sm:font-bold'>rajannaadeli@gmail.com</a></p>
+                    <p>Phone: <span className='font-semibold sm:font-bold'>+91 9359379618</span></p>
                 </div>
             </div>
             <div className="logowithtext w-[250px] justify-between items-center hidden md:flex">

@@ -6,7 +6,7 @@ import ScrollAnimation from "./ScrollAnimation"
 
 const Skill = ({ name, xA, yA, web }) => {
   return (
-    <motion.div className={`absolute web flex justify-center ${web ? "p-8" : " p-2 sm:p-2 md:px-3 md:py-2 lg:px-4 lg:py-3"} items-center font-semibold sm:text-light sm:bg-dark sm:dark:text-dark sm:dark:bg-light text-dark bg-transparent dark:text-light dark:bg-transparent rounded-full boxShadow-3xl text-[10px] sm:text-[12px] md:text-sm lg:text-base`}
+    <motion.div className={`absolute web flex justify-center ${web ? "p-3 sm:p-8" : " px-1.5 py-1 sm:p-2 md:px-3 md:py-2 lg:px-4 lg:py-3"} items-center font-normal sm:font-semibold sm:text-light bg-dark dark:bg-light dark:text-dark rounded-full boxShadow-3xl text-light text-[8px] sm:text-xs md:text-sm lg:text-base`}
       whileHover={{
         scale: [1, 1.1],
       }}
@@ -32,8 +32,8 @@ const Skill = ({ name, xA, yA, web }) => {
 export default function Skills({ web = false }) {
   return (
     <div>
-      <AnimateText isWord={true} className="mb-20 font-bold shadow-purple text-center py-10" text={"S k i l l s"}></AnimateText>
-      <div className="h-[50vw] sm:h-[60vw] md:h-[80vw] lg:h-screen flex m-auto bg-circularXs sm:bg-circularSm md:bg-circularMd lg:bg-circularLg xl:bg-circularLight dark:bg-circularDarkXs dark:sm:bg-circularDarkSm dark:md:bg-circularDarkMd dark:lg:bg-circularDarkLg dark:xl:bg-circularDark rounded-full justify-center relative items-center ">
+      <AnimateText isWord={true} className="mb-8 sm:mb-20 font-bold shadow-purple text-center py-6 sm:py-10 pt-28 sm:pt-10" text={"S k i l l s"}></AnimateText>
+      <div className="h-[100vw] sm:h-[60vw] md:h-[80vw] lg:h-screen flex m-auto bg-circularXs sm:bg-circularSm md:bg-circularMd lg:bg-circularLg xl:bg-circularLight dark:bg-circularDarkXs dark:sm:bg-circularDarkSm dark:md:bg-circularDarkMd dark:lg:bg-circularDarkLg dark:xl:bg-circularDark rounded-full justify-center relative items-center ">
         <Skill name="Web" xA="0vw" yA="0vw" web={true} />
         <Skill name="JavaScript" xA="-20vw" yA="0vw" />
         <Skill name="CSS" xA="-5vw" yA="-11vw" />
