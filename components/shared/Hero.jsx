@@ -49,7 +49,7 @@ export default function Hero() {
                         {
                             !isMobile ?
                                 <>
-                                    <motion.a href={'https://drive.google.com/file/d/1y1l0FuJRHX8tufltOH8cM30c_X-Iy3Zr/view?usp=sharing'} target='_blank'
+                                    <motion.a href={'https://drive.google.com/file/d/1Np1gRWMYgAlvuBDCshA1YE65YcxtWSjK/view?usp=drive_link'} target='_blank'
                                         variants={paraVariants}
                                         initial="initial"
                                         whileInView="animate"
@@ -67,7 +67,7 @@ export default function Hero() {
                                 </>
                                 :
                                 <>
-                                    <a href={'https://drive.google.com/file/d/1y1l0FuJRHX8tufltOH8cM30c_X-Iy3Zr/view?usp=sharing'} target='_blank'
+                                    <a href={'https://drive.google.com/file/d/1Np1gRWMYgAlvuBDCshA1YE65YcxtWSjK/view?usp=drive_link'} target='_blank'
                                     >
                                         <button className="text-light bg-dark mr-3 rounded-lg px-2 sm:px-3 p-1.5 sm:p-2 md:p-3 text-sm sm:text-base md:text-xl font-semibold sm:font-bold flex border-2 hover:bg-light dark:bg-light dark:text-dark hover:text-dark border-dark dark:hover:bg-dark dark:hover:text-light dark:border-light">Resume<span><LinkArrow className={"px-2 h-5 sm:h-6 inline-block "} /></span></button>
                                     </a>
